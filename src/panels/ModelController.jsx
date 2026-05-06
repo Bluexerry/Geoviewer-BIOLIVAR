@@ -573,11 +573,7 @@ class ModelController extends React.Component {
         emitter.removeListener(this.addPointListener);
         emitter.removeListener(this.updatePointListener);
 
-        // Destory Materialbox
-        //                         {loading ? <p>Cargando datos...</p> : <Plot data={traces} layout={layout} />}
 
-        var elems = document.querySelectorAll('.materialboxed');
-        elems.map(elem => elem.destory());
     }
 
     render() {        

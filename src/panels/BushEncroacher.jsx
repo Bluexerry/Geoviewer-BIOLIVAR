@@ -182,8 +182,6 @@ class BushEncroacher extends React.Component {
     componentWillUnmount() {
         emitter.removeListener(this.openBushEncroacherControllerListener);
         emitter.removeListener(this.closeAllControllerListener);
-        emitter.removeListener(this.setMapZoomListener);
-        emitter.removeListener(this.handleDatasetRemoveListener);
     }
 
     render() {

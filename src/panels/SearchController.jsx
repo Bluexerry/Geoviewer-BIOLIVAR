@@ -459,9 +459,8 @@ class SearchController extends React.Component {
     }
 
     handleDataSubmit = (data) => {
-        this.setState({url: data})
-        emitter.emit('moveURL', this.state.url);
-        // Puedes manejar los datos como desees aquí
+        this.setState({url: data});
+        emitter.emit('moveURL', data);
     };
 
     moveCapa = () => {
@@ -477,11 +476,7 @@ class SearchController extends React.Component {
         emitter.removeListener(this.addPointListener);
         emitter.removeListener(this.updatePointListener);
 
-        // Destory Materialbox
-        //                         {loading ? <p>Cargando datos...</p> : <Plot data={traces} layout={layout} />}
 
-        var elems = document.querySelectorAll('.materialboxed');
-        elems.map(elem => elem.destory());
     }
 
     render() {

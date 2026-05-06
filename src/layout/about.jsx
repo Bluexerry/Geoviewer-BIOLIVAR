@@ -46,8 +46,8 @@ class About extends React.Component {
     }
 
     componentWillUnmount() {
-        // Destory Modal
-        this.state.modal.destory();
+        // Destroy Modal
+        this.state.modal.destroy();
     }
 
     render() {

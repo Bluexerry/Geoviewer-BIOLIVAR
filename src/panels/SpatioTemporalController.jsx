@@ -356,8 +356,7 @@ class SpatioTemporalAnalysisController extends React.Component {
         emitter.removeListener(this.updatePointListener);
         emitter.removeListener(this.moveURListener);
 
-        var elems = document.querySelectorAll('.materialboxed');
-        elems.map(elem => elem.destory());
+
     }
 
     render() {        

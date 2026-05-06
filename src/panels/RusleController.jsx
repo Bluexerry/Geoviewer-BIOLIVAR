@@ -554,11 +554,7 @@ class RusleController extends React.Component {
         emitter.removeListener(this.moveURListener);
 
 
-        // Destory Materialbox
-        //                         {loading ? <p>Cargando datos...</p> : <Plot data={traces} layout={layout} />}
 
-        var elems = document.querySelectorAll('.materialboxed');
-        elems.map(elem => elem.destory());
     }
 
     render() {        
